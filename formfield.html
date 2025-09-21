@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>reserveform</title>
+    <style></style>
+    <script>
+        function showStyle(field) {
+            field.style.backgroundColor = '#FFFFCC';
+        }
+        function hideStyle(field) {
+            field.style.backgroundColor = '#CD5C5C';
+        }
+        function setFontStyle(field) {
+            field.style.fontWeight = 'bold';
+            field.style.fontFamily = 'Arial';
+        }
+    </script>
+</head>
+
+<body>
+    <h2>reserveform : </h2>
+    <form action="" id="formreservation">
+        <table>
+            <tr>
+                <td><label for="txtname">Name : </label></td>
+                <td><input type="text" onfocus="showStyle(this);" onblur="hideStyle(this);"
+                        onselect="setFontStyle(this);" /></td>
+            </tr>
+            <tr>
+                <td><label for="">Email : </label></td>
+                <td><input type="text" name="" id="" onfocus="showStyle(this);" onblur="hideStyle(this);"
+                        onselect="setFontStyle(this);" /></td>
+            </tr>
+            <tr>
+                <td><label for="">Comments : </label></td>
+                <td><input type="text" name="" id="" cols="15" rows="3" onfocus="showStyle(this);"
+                        onblur="hideStyle(this);" onselect="setFontStyle(this);" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="" id="" value="Submit" /></td>
+                <td><input type="reset" name="" id="" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

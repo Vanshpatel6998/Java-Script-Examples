@@ -1,0 +1,21 @@
+<html> 
+<head>
+<title>Browser.</title>
+<style></style>
+<script>
+    function new_window()
+    {
+        if(confirm('Do you want to open a new page?'))
+        {
+            window.open('https://cdnjs.com/libraries/font-awesome.com');
+        }
+        else{
+            window.alert('In the current window');
+        }
+    }
+</script>
+</head>
+<body>
+    <input type="button" name="" id="" value="Click to move to the next page" onclick="new_window()">
+</body>
+</html>

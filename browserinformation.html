@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>navigator object</title>
+<style></style>
+<script>
+    function display_browser()
+    {
+        document.write('Browser Name:'+navigator.appName+'<br/>');
+        document.write('Browser Version:'+navigator.appVersion+'<br/>');
+        document.write('Browser language:'+navigator.browserLanguage+'<br/>');
+        document.write('Plateform:'+navigator.platform+'<br/>');
+        if(navigator.cookieEnabled)
+        {
+            document.write('Cookie is enabled in the browser.');
+        }
+    }
+</script>
+</head>
+<body>
+    <input type="button" name="" id="" value="Browser Information" onclick="display_browser()">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Session Storage.</title>
+<style></style>
+<script>
+    function store() {
+        if (('sessionStorage' in window['sessionStorage'] !== null)) {
+            var name = document.getElementById('name').value;
+            sessionStorage.setItem('username',name);
+            var date = sessionStorage.getItem('username');
+            sessionStorage.setItem('age',document.getElementById('age').value);
+            var agevalue = parseInt(sessionStorage.getItem('age'));
+            alert(date + 'is' + agevalue + 'years old.');
+        }
+    }
+</script>
+</head>
+<body>
+    <form action="" name="myform">
+        <label for="">Enter Name :</label>
+        <input type="text" name="" id="name">
+        <br><br>
+        <label for="">Enter Age:</label>
+        <input type="text" name="" id="age">
+        <br><br>
+        <input type="button" name="" id="" value="Submit" onclick="store()">
+    </form>
+</body>
+</html>

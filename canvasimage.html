@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Image</title>
+<style>
+    #mcanvas {
+        border: 2px solid black;
+    }
+</style>
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById("mcanvas");
+        var ctext = canvas.getContext("2d");
+        var imgObj = new Image();
+        imgObj.onload = function () {
+            ctext.drawImage(imgObj,69,50);
+        };
+        imgObj.src = "pexels-pixabay-15239.jpg";
+};
+</script>
+</head>
+<body>
+    <canvas id="mcanvas" width="368" height="360"></canvas>
+</body>
+</html>

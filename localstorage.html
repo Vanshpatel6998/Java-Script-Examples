@@ -1,0 +1,32 @@
+<html>
+<head>
+<title></title>
+<style></style>
+<script>
+    function store() {
+        if(('localStorage') in window && window ['localStorage'] !== null){
+            var username = document.getElementById('username').value;
+        }
+        else{
+            alert('your browser does not support storage');
+        }
+    }
+    function cancle_storage(){
+        if (('localStorage') in window && window['localStorage'] !==null){
+            localStorage.removeItem('username');
+        }
+        else{
+            alert('your browser does not support storage');
+        }
+    }
+</script>
+</head>
+
+<body>
+    <form action="localstorage2.html" method="get">
+        UserName: <input type="text" name="" id="username" value="" size="20" onblur="store()">
+        <input type="submit" name="" id="" value="Submit">
+        <input type="reset" name="" id="" value="Cancle" onclick="cancle_storage()">
+    </form>
+</body>
+</html>

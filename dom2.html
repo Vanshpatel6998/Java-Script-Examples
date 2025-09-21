@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Form Object</title>
+<style></style>
+<script>
+    function display_length(){
+        var count = document.getElementById("form1").length;
+        alert('Number of controls on the form:' + count);
+    }
+</script>
+</head>
+<body>
+    <form action="#" id="form1">
+        FirstName: <input type="text" name="firstname" id="" value="John"><br><br>
+        LastName: <input type="text" name="lastname" id="" value="Smith"><br><br>
+        Age: <input type="text" name="age" id="" value="40"><br><br>
+        <input type="button" name="" id="" value="controls" onclick="display_length()">
+    </form>
+</body>
+</html>

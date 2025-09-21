@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Array.</title>
+<style></style>
+<script>
+    var products = new Array(3);
+    products[0] = new Array('Monitor','265.44','1');
+    products[1] = new Array('Keyboard','45.50','3');
+    products[2] = new Array('Mouse','67.81','5');
+    document.write('<Table border=1><tr><th>Name</th><th>Price</th><th>Number of Products</th></tr>');
+    for (var i=0;i<products.length;i++)
+    {
+        document.write('<tr>');
+            for(var j=0;j<products[i].length;j++)
+            {
+                document.write('<td>' + products[i][j] + '</td>');
+            }
+            document.write('</tr>');
+    }
+    document.write('</Table>');
+</script>
+</head>
+<body>
+</body>
+</html>

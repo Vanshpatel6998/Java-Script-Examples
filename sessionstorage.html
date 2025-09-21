@@ -1,0 +1,15 @@
+<html>
+<head>
+<title></title>
+<style></style>
+<script>
+    function testStorage() {
+        if (('sessionStorage' in window) && window['sessionStorage'] !== null) {
+            sessionStorage.setItem('Name','HTML');
+        }
+    }
+</script>
+</head>
+<body onload="testStorage();">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title></title>
+<style>
+    #mcanvas {
+        border: 2px solid black;
+    }
+</style>
+<script>
+    window.onload=function(){
+        var canvas = document.getElementById('mcanvas');
+        var ctext = canvas.getContext('2d');
+        ctext.beginPath();
+        ctext.moveTo(188,130);
+        ctext.bezierCurveTo(140,10,388,10,288,100);
+        ctext.lineWidth=15;
+        ctext.strokeStyle="purple";
+        ctext.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="mcanvas" width="378" height="200"></canvas>
+</body>
+</html>

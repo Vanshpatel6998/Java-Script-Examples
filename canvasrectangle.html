@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Canvas.</title>
+<style>
+    #mcanvas{
+        border: 2px solid blue;
+    }
+</style>
+<script>
+    window.onload=function(){
+        var canvas = document.getElementById('mcanvas');
+        var ctext = canvas.getContext('2d');
+        ctext.beginPath();
+        ctext.rect(20,20,200,100);
+        ctext.fillStyle = "blue";
+        ctext.fill();
+        ctext.lineWidth = "5";
+        ctext.strokeStyle = "black";
+        ctext.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="mcanvas" width="300" height="200"></canvas>
+</body>
+</html>

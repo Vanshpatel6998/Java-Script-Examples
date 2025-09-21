@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Document Object.</title>
+<style></style>
+<script>
+    function change_image() {
+        var imgText = document.getElementById('myimage').alt;
+        if(imgText == "off") {
+            document.getElementById('myimage').src = "onn.jpeg";
+            document.getElementById('myimage').alt = "on";
+            document.getElementById('myText').value = "onn bulb";
+        }
+        else {
+            document.getElementById('myimage').src = "off.png";
+            document.getElementById('myimage').alt = "off";
+            document.getElementById('myText').value = "off.bulb";
+        }
+    }
+</script>
+</head>
+<body>
+    <img id="myimage" src="off.png" alt="" width="150" height="200" alt="off"><br>
+    <input type="button" name="" id="" value="Change Image" onclick="change_image()">
+</body>
+</html>

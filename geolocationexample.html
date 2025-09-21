@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<style></style>
+<script>
+    function getLocation(){
+        function showPosition (position){
+            alert('Latitude:'+position.coords.longitude);
+        }
+        function errorHandler (error){
+            switch (error.code){
+                case error.PERMISSION_DENIED: 
+                    alert('You Have Denied access to your position.');
+                    break;
+                case error.POSITION_UNAVAILABLE: 
+                    alert('There Was a problem getting your position.');
+                    break;
+                case error.TIMEOUT:  
+                    alert('The Application has timed out attempting to get your postion');
+                    break;
+            }
+        }
+    }
+</script>
+</head>
+<body>
+    <input type="button" name="" id="" value="DisplayLocation" onclick="getLocation()">
+</body>
+</html>

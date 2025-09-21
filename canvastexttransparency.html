@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Transparncy.</title>
+<style>
+    body{
+        margin: 150px;
+        padding: 150px;
+    }
+    #mcanvas{
+        border: 2px solid black;
+    }
+</style>
+<script>
+    window.onload=function(){
+        var canvas = document.getElementById("mcanvas");
+        var ctext = canvas.getContext("2d");
+        ctext.fillStyle="Indigo";
+        ctext.strokeStyle="black";
+        ctext.lineWidth=2;
+        ctext.font="italic 30pt calibri";
+        ctext.fillText("HTML5",40,100);
+        ctext.strokeText("HTML5",40,100);
+        ctext.fillStyle="blue";
+        ctext.globalAlpha=0.5;
+        ctext.fillRect(100,10,150,100);
+    };
+</script>
+</head>
+<body>
+    <canvas id="mcanvas" width="350" height="170"></canvas>
+</body>
+</html>

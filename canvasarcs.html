@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+<style></style>
+<script>
+    window.onload=function(){
+        var canvas = document.getElementById('mcanvas');
+        var ctext = canvas.getContext('2d');
+        var x = canvas.width/2;
+        var y = 150;
+        var radius = 75;
+        var startangle = 1.1*Math.PI;
+        var endangle = 1.9*Math.PI;
+        var clockwise = false;
+        ctext.beginPath();
+        ctext.arc(x,y,radius,startangle,endangle,clockwise);
+        ctext.lineWidth = 25;
+        ctext.strokeStyle="green";
+        ctext.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="mcanvas" width="280" height="250"></canvas>
+</body>
+</html>

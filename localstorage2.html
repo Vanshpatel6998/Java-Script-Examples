@@ -1,0 +1,15 @@
+<html>
+<head>
+<title></title>
+<style></style>
+<script>
+    function print() {
+        var username = localStorage.getItem('username');
+        document.getElementById('lblMsg').innerHTML = 'UserName:<b>' + username + '</b>'
+    }
+</script>
+</head>
+<body onload="print()">
+    <label for="" id="lblMsg"></label><br>
+</body>
+</html>

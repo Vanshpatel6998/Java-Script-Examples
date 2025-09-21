@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title></title>
+    <style></style>
+    <script>
+        function showimage(object, url) {
+            object.src = url;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Hotel Reservation Form : </h2>
+    <form action="" id="formreservation">
+        <table>
+            <tr>
+                <td><label for="txtname">Name : </label></td>
+                <td><input type="text" name="" id="txtname"></td>
+            </tr>
+            <tr>
+                <td>Arrival Date : </td>
+                <td><input type="text" name="" id="txtarrival"></td>
+            </tr>
+            <tr>
+                <td>Departure Date : </td>
+                <td><input type="text" name="" id="txtdeparture"></td>
+            </tr>
+            <tr>
+                <td>Number Of Person : </td>
+                <td><input type="text" name="" id="txtperson" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td><br><img src="25395-2-submit-button.png" alt="Submit" id="imgsubmit" width="120px" height="100px"
+                        onmousedown="showimage(this,'25432-3-submit-button-file.png');"
+                        onmouseup="showimage(this,'25395-2-submit-button');" onclick="formreservation.submit();" /></td>
+                <td><img src="reset.jpg" alt="Reset" id="imgsubmit" width="120px" height="100px"
+                        onmousedown="showimage(this,'reset.png');" onmouseup="showimage(this,'reset.jpg');"
+                        onclick="formreservation.reset();" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

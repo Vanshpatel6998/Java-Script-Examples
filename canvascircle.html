@@ -1,0 +1,24 @@
+<html>
+<head>
+<title></title>
+<style></style>
+
+</head>
+<body>
+    <canvas id="mycanvas" width="356" height="150" style="border: 2px solid black;"></canvas>
+    <script>
+        var canvas =  document.getElementById("mycanvas");
+        var ctext = canvas.getContext("2d");
+        var ctrX = canvas.width/2;
+        var ctrY = canvas.height/2;
+        var radius = 70;
+        ctext.beginPath();
+        ctext.arc(ctrX,ctrY,radius,0,2*Math.PI,false);
+        ctext.fillStyle = "DarkOrchid";
+        ctext.fill();
+        ctext.lineWidth=5;
+        ctext.strokeStyle="black";
+        ctext.stroke();
+    </script>
+</body>
+</html>
